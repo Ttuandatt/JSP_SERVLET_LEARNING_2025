@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+</head>
+<body>
+	<h3>Bài 2: Viết chương trình khi người dùng nhấn nút sẽ thay đổi nội dung của đoạn trong 1 thẻ div (bằng 2 cách)</h3>
+	<div id="my_div">
+		NỘI DUNG BAN ĐẦU
+	</div>
+	<input type="button" id="change1" value="Thay đổi nội dung">
+	
+	<hr>
+	
+	<p>Mở rộng: nhấn nút thì thay đổi nội dung, nhấn lần 2 thì quay về nội dung cũ</p>
+
+	<div id="my_div2">
+		NỘI DUNG GỐC
+	</div>
+	<input type="button" id="change2" value="Thay đổi nội dung"/>
+	
+	
+	
+	
+	
+	
+	
+	
+<script lang="JavaScript">
+	//Để code JavaScript ở cuối vì phải có HTML r mới code JS được
+	//Cách 1
+	var change1 = document.getElementById("change1");
+	change1.onclick = function(){
+		window.alert("Đã nhấn nút thay đổi nội dung");
+		var my_div = document.getElementById("my_div");
+		my_div.innerHTML = "NỘI DUNG ĐÃ BỊ THAY ĐỔI";
+	}
+
+	//Cách 2
+	//change.onclick = function(){
+		//var my_div = document.getElementById("my_div");
+		//my_div.innerHTML = "NỘI DUNG ĐÃ BỊ THAY ĐỔI";
+	//}
+	
+	//Mở rộng
+	var change2 = document.getElementById("change2");
+	var my_div2 = document.getElementById("my_div2");
+	var original_text = my_div2.innerHTML; // Lưu nội dung ban đầu
+	var isChanged = false;	//Biến trạng thái để kiểm tra nút đã bị nhấn chưa
+
+	change2.onclick = function(){
+		if(isChanged)	
+			my_div2.innerHTML = original_text;	// Quay lại nội dung ban đầu
+		else
+			my_div2.innerHTML = "NỘI DUNG ĐÃ BỊ THAY ĐỔI" // Thay đổi nội dung
+		isChanged = !isChanged; //Đảo trạng thái
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script lang="JavaScript">
+
+</script>
+</head>
+<body>
+	<h3>Bài 4: Viết chương trình ẩn/hiện một thẻ div</h3>	
+	
+	<div id="my_div" style="background-color: yellow" onmouseover="changeColorToGreen()" onmouseleave="changeColorToYellow()">
+		Bài 1: Tạo 1 input-text, khi người dùng nhập tên, trang web sẽ hiển thị nội dung: "Xin chào" + tên đã nhập
+		<hr/>
+		Bài 2: Viết chương trình khi người dùng nhấn nút sẽ thay đổi nội dung của đoạn trong 1 thẻ div (bằng 2 cách)
+		<hr/>
+		Bài 3: Viết chương trình thay đổi màu nền của thẻ div khi người dùng di chuyển chuột vào khu vực nội bộ của thẻ div
+		
+	</div>
+	<button id="my_button" onclick="hidden_Div()">Ẩn</button>
+
+<script lang="JavaScript">
+
+	var check = "hidden";
+	var button = document.getElementById("my_button");
+	
+	function hidden_Div(){
+		var my_div = document.getElementById("my_div");
+		if(check=="hidden"){
+			my_div.style = "display: none";
+			check = "show";
+			button.innerHTML = "Hiện";
+		}else{
+			my_div.style = "display: block";
+			check = "hidden";
+			button.innerHTML = "Ẩn";
+		}
+	}
+	
+</script>	
+</body>
+</html>

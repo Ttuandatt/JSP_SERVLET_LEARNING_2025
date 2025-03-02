@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Ẩn/Hiện Div & In Nội Dung Thẻ A</title>
+</head>
+<body>
+    <h3>Bài 5: Viết chương trình in ra nội dung của tất cả các thẻ a có trong trang</h3>    
+	
+    <h3>Danh sách các liên kết:</h3>
+    <a href="#">Trang chủ</a>
+    <a href="#">Giới thiệu</a>
+    <a href="#">Sản phẩm</a>
+    <a href="#">Liên hệ</a>
+    <br>
+    <button onclick="printAllLinks()">In danh sách thẻ a</button>
+    <div id="output" style="margin-top: 10px; padding: 10px; background-color: yellow"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script lang="JavaScript">
+        function printAllLinks() {
+            var links = document.querySelectorAll("a"); // Lấy tất cả thẻ <a>
+            var outputDiv = document.getElementById("output");
+            outputDiv.innerHTML = ""; // Xóa nội dung cũ
+            
+            if (links.length === 0) {
+                outputDiv.innerHTML = "Không có thẻ <a> nào trên trang.";
+                return;
+            }
+
+            links.forEach((link, index) => {
+                outputDiv.innerHTML += `Link ${index + 1}: ${link.innerHTML} <br/>`;
+            });
+        }
+    </script>    
+</body>
+</html>

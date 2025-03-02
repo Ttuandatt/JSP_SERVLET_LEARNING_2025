@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script lang="JavaScript">
+
+</script>
+</head>
+<body>
+	<h3>Bài 3: Viết chương trình thay đổi màu nền của thẻ div khi người dùng di chuyển chuột vào khu vực nội bộ của thẻ div</h3>	
+	
+	<div id="my_div" style="background-color: yellow" onmouseover="changeColorToGreen()" onmouseleave="changeColorToYellow()">
+		Bài 1: Tạo 1 input-text, khi người dùng nhập tên, trang web sẽ hiển thị nội dung: "Xin chào" + tên đã nhập
+		<hr/>
+		Bài 2: Viết chương trình khi người dùng nhấn nút sẽ thay đổi nội dung của đoạn trong 1 thẻ div (bằng 2 cách)
+		<hr/>
+		Bài 3: Viết chương trình thay đổi màu nền của thẻ div khi người dùng di chuyển chuột vào khu vực nội bộ của thẻ div
+		
+	</div>
+
+
+<script lang="JavaScript">
+	function changeColorToGreen(){
+		var my_div = document.getElementById("my_div");
+		my_div.style = "background-color: green";
+	}
+	function changeColorToYellow(){
+		var my_div = document.getElementById("my_div");
+		my_div.style = "background-color: yellow";
+	}
+</script>	
+</body>
+</html>

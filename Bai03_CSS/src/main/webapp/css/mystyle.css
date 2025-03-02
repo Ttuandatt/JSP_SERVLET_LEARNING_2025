@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* Đây là CSS element selector, tức là CSS cái element. Áp dụng cho tất cả các thành phần có tên của element đó*/
+a{
+	color: red;
+}
+
+/* Đây là CSS id selector, sử dụng dấu thăng, áp dụng cho thành phần có tên class đó. Trong 1 trang thì mỗi id chỉ được dùng 1 lần duy nhất, tức là không có id nào trùng lặp trong 1 trang*/
+#indam{
+	font-weight: bold;
+}
+/* Đây là CSS class selector, sử dụng dấu chấm. Có thể được sử dụng nhiều lần trong cùng 1 trang. Cũng có thể áp dụng cho từng loại tag*/
+.innghieng{
+	font-style: italic;
+}
+
+h1.maudo{	/*Tức là ở đây, khi ta dùng thẻ h1 mà gọi class="maudo" thì chỉ có thẻ h1 lúc đó là sẽ ch ra màu đỏ, nhưng lần sau nếu ta dùng thẻ h1 tiếp nhưng không gọi class="maudo" thì nó sẽ cho ra màu mặc định*/
+	color: red;
+}
