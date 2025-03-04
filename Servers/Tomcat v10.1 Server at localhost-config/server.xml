@@ -142,7 +142,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Bai01_HelloWorld" path="/Bai01_HelloWorld" reloadable="true" source="org.eclipse.jst.jee.server:Bai01_HelloWorld"/><Context docBase="Bai02_HTML" path="/Bai02_HTML" reloadable="true" source="org.eclipse.jst.jee.server:Bai02_HTML"/><Context docBase="Bai03_CSS" path="/Bai03_CSS" reloadable="true" source="org.eclipse.jst.jee.server:Bai03_CSS"/><Context docBase="Bai04_Bootstrap" path="/Bai04_Bootstrap" reloadable="true" source="org.eclipse.jst.jee.server:Bai04_Bootstrap"/><Context docBase="Bai05_JavaScript" path="/Bai05_JavaScript" reloadable="true" source="org.eclipse.jst.jee.server:Bai05_JavaScript"/><Context docBase="Bai06_BaiTapJSP01" path="/Bai06_BaiTapJSP01" reloadable="true" source="org.eclipse.jst.jee.server:Bai06_BaiTapJSP01"/><Context docBase="Bai06_BaiTapJSP02" path="/Bai06_BaiTapJSP02" reloadable="true" source="org.eclipse.jst.jee.server:Bai06_BaiTapJSP02"/></Host>
+      <Context docBase="Bai07_BaiTapJSP" path="/Bai06_BaiTapJSP02" reloadable="true" source="org.eclipse.jst.jee.server:Bai07_BaiTapJSP"/></Host>
     </Engine>
   </Service>
 </Server>
