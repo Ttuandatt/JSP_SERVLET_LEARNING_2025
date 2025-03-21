@@ -13,7 +13,7 @@
 </head>
 <body>
 	<div class="container" id="my_div">
-		<form action="muaMayTinh.jsp" method="get">	<!-- Phương thức get sẽ hiển thị toàn bộ thông tin trên thanh URL, phương thức post thì không -->
+		<form action="trangDatHang.jsp" method="get">	<!-- Phương thức get sẽ hiển thị toàn bộ thông tin trên thanh URL, phương thức post thì không -->
 		<div class="mb-3">
 			<label for="hoVaTen" class="form-label">Họ và tên</label> 
 			<input type="text" class="form-control" id="hoVaTen" name="hoVaTen">

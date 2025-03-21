@@ -28,5 +28,7 @@
 	<p>Xin cảm ơn <b><%=hoVaTen %></b> đã đặt <b><%=soLuongInt %></b> sản phẩm.</p><br>
 		Với mỗi sản phẩm có giá là $5, bạn cần thanh toán <b>$<%=soLuongInt*5 %></b>
 	<p>Thông báo sẽ được gửi đến email <b><%=email %></b></p>
+	
+	<button type="submit"><a href="datMuaMayTinh.jsp">Hóa đơn</a></button>
 </body>
 </html>

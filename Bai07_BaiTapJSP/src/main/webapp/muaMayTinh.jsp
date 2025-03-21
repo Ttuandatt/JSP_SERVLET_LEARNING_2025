@@ -12,9 +12,15 @@
 </head>
 <body>
 	<div class="container">
+		<%
+			String hoVaTen = request.getParameter("hoVaTen");
+			String email = request.getParameter("email");
+			String soLuongString = request.getParameter("soLuong");
+		
+		%>
 		<h1>Chọn cấu hình máy tính bạn cần mua</h1>
 		<hr>
-		<form action="trangDatHang.jsp">
+		<form action="datMuaMayTinh.jsp">
 			<h4>Processor</h4>
 			<div class="form-check">
 				<input class="form-check-input" type="radio" name="processor"
